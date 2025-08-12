@@ -1,0 +1,399 @@
+@font-face {
+    font-family: 'Opensans';
+    src: url(./fonts/DM-Sans-regular.woff2);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    max-width: 1150px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Header */
+
+.navbar,
+.site-header {
+    display: flex;
+    align-items: center;
+}
+
+.site-header {
+    justify-content: center;
+    border-bottom: 1px solid hsla(0, 0%, 80%, .42);
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar .logo {
+    margin-right: 36px;
+    width: 42px;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+img {
+    width: 100%;
+}
+
+img {
+    border-style: none;
+}
+
+.navbar .menu {
+    align-items: center;
+    display: flex;
+}
+
+.navbar .menu-item {
+    margin-right: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar .menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu .active {
+    border-color: #064cdb;
+    color: rgba(0, 0, 0, .9);
+}
+
+.menu a {
+    border-top: 1px solid transparent;
+    color: rgba(0, 0, 0, .502);
+    display: block;
+    font-family: 'Opensans';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 38px;
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+
+/* Main */
+
+/* Home Page */
+
+main {
+    display: block;
+}
+
+.page-hero {
+    background-image: url(./images/hero-main-img.png), url(./images/hero-main-img-2.png);
+    background-position: -1000px -600px, 700px 500px;
+    background-repeat: no-repeat;
+    background-size: 100% auto, auto;
+    padding: 100px 0;
+}
+
+.section-header {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+}
+
+.section-icon {
+    height: 52px;
+    margin: auto auto 25px;
+    max-width: 52px;
+    width: 100%;
+}
+
+.section-subtitle {
+    color: #05c896;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-title,
+.section-title-left {
+    color: #434363;
+    font-family: 'Roboto';
+    font-size: 52px;
+    font-weight: 200;
+    letter-spacing: -1px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+b {
+    font-weight: 700;
+}
+
+.section-desc {
+    color: rgb(92, 103, 113);
+    font-family: 'Opensans';
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 1.6em;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.section-cta {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.btn-primary,
+.btn-transparent {
+    align-items: center;
+    background-color: #05c896;
+    border: 1px solid #05c896;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Opensans';
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    padding: 10px 22px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all .1s ease-in-out;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+.btn-primary .icon-chrome,
+.btn-transparent .icon-chrome {
+    background-image: url(images/chrome-icon.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 20px;
+    margin-right: 12px;
+    width: 20px;
+}
+
+.section-thumb,
+.section-thumb-welcome {
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, .23);
+    margin: auto;
+    max-width: 880px;
+    width: 100%;
+}
+
+/* Contact Us Page */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto 0;
+    max-width: 768px;
+    width: 100%;
+    color: #666666;
+}
+
+.form-groups {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    color: #000;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #000;
+}
+
+.form-group.half {
+    width: 100%;
+    color: #000;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 40px;
+    width: 100%;
+    color: #000;
+}
+
+.form-group input {
+    height: 40px;
+    padding: 0 12px;
+    color: #000;
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1px solid #333;
+    color: #000;
+    font-family: 'Opensans';
+    border-radius: 5px;
+    font-weight: 400 !important;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 12px;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.contact-form button {
+    line-height: 16px;
+    font-weight: 600;
+    justify-content: center;
+    margin-right: auto;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border-color: #333;
+    color: #333;
+}
+
+.btn-transparent:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Privacy Page */
+
+.section-title-left {
+    text-align: left;
+}
+
+article li,
+article p {
+    color: #323247;
+    font-family: 'Opensans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.8px;
+}
+
+article p {
+    margin: 20px 0;
+}
+
+article li {
+    list-style: circle;
+    margin-left: 1rem;
+    padding-left: 4px;
+}
+
+article hr {
+    background: #ccc;
+    border: 0;
+    display: block;
+    height: 1px;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+article h3 {
+    font-size: 20px;
+}
+
+article h2,
+article h3 {
+    line-height: 37.8px;
+    margin: 50px 0 20px;
+}
+
+article h2,
+article h3,
+article h4 {
+    color: #666;
+    font-weight: 300;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: #151515;
+    padding: 100px 0;
+}
+
+.footer-wrapper {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-logo-wrapper {
+    width: 64px;
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 53%;
+}
+
+.footer-details .footer-text {
+    color: hsla(0, 0%, 100%, .55);
+    font-family: 'Opensans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.footer-details .footer-menu {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-menu-item a {
+    color: #fff;
+    font-family: 'Opensans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.footer-menu-item a:hover {
+    color: hsla(0, 0%, 100%, .769);
+}
